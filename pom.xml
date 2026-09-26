@@ -30,7 +30,6 @@
     <plugins>
       <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.13.0</version></plugin>
       <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId><version>3.4.0</version><configuration><failOnMissingWebXml>false</failOnMissingWebXml></configuration></plugin>
-      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>3.8.1</version><executions><execution><id>copy-runner</id><phase>package</phase><goals><goal>copy</goal></goals><configuration><artifactItems><artifactItem><groupId>com.heroku</groupId><artifactId>webapp-runner</artifactId><version>10.1.0.0</version><destFileName>webapp-runner.jar</destFileName></artifactItem></artifactItems></configuration></execution></executions></plugin>
       <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.0</version></plugin>
     </plugins>
   </build>
