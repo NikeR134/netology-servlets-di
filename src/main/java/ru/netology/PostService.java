@@ -10,3 +10,4 @@ public class PostService {
     public Post save(Post post) { return repository.save(post); }
     public boolean removeById(long id) { return repository.removeById(id); }
 }
+
