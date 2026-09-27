@@ -29,3 +29,4 @@ public class PostRepository {
 
     public boolean removeById(long id) { return posts.remove(id) != null; }
 }
+

@@ -10,3 +10,4 @@ public class PostController {
     public Post save(Post post) { return service.save(post); }
     public boolean removeById(long id) { return service.removeById(id); }
 }
+
