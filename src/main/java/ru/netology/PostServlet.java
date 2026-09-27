@@ -2,12 +2,10 @@ package ru.netology;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-@WebServlet("/posts")
 public class PostServlet extends HttpServlet {
     protected PostController controller;
     protected final ObjectMapper mapper = new ObjectMapper();
@@ -86,4 +84,6 @@ public class PostServlet extends HttpServlet {
         }
     }
 }
+
+
 
