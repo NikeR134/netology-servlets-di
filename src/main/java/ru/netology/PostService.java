@@ -1,7 +1,9 @@
 package ru.netology;
 
 import java.util.List;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PostService {
     private final PostRepository repository;
     public PostService(PostRepository repository) { this.repository = repository; }
@@ -10,3 +12,4 @@ public class PostService {
     public Post save(Post post) { return repository.save(post); }
     public boolean removeById(long id) { return repository.removeById(id); }
 }
+
